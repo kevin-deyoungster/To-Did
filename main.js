@@ -1,4 +1,4 @@
-let BUTTON = document.getElementById("add");
+let ADD_TODO_BUTTON = document.getElementById("add");
 let MAINLIST = document.querySelector(".todos");
 let INPUTBOX = document.getElementById("todo");
 
@@ -19,7 +19,7 @@ function renderTodoList(todos) {
     MAINLIST.innerHTML = tablePrepend + todoLIs;
 }
 
-BUTTON.onclick = function() {
+ADD_TODO_BUTTON.onclick = function() {
     let title = INPUTBOX.textContent;
     let date = chrono.parseDate(title);
     todos.push({ title, date });
